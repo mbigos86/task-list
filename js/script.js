@@ -20,7 +20,12 @@
 
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
-                render();
+        render();
+    };
+
+    const toggleTaskDone = (taskIndex) => {
+        tasks[taskIndex].done = !tasks[taskIndex].done
+        render();
     };
 
     const render = () => {
@@ -31,6 +36,7 @@
                 <li
                  ${task.done ? " style=\"text-decoration: line-through\"" : ""}
                  >
+                 <button class="js-doneTask"> Wykonane zadanie</button>
                  <button class="js-removeTask">Usuń zadanie</button>
                  ${task.content}
                 </li>
@@ -44,6 +50,14 @@
         removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
                 removeTask(taskIndex);
+            });
+        });
+
+        const toggleDoneButtons = document.querySelectorAll(".js-doneTask");
+
+        toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
+            toggleDoneButton.addEventListener("click", () => {
+                toggleTaskDone(taskIndex);
             });
         });
     };
