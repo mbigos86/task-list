@@ -1,9 +1,6 @@
 .container {
-    min-height: 100vh;
     padding: 20px;
-    margin: 0 auto;
     font-family: Lato, sans-serif;
-    background-color: #c1c1c4;
 }
 
 .container__header {
