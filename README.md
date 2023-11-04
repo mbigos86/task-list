@@ -1,7 +1,7 @@
 # Task-list
 
 ## Demo
-[Website project](https://mbigos86.github.io/currency-converter/).
+[Website project](https://mbigos86.github.io/task-list/).
 
 ## Task-list info
 
