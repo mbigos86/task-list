@@ -41,26 +41,25 @@
     };
 
     const render = () => {
-        let htmlString = "";
+        let tasksListHTMLContent = "";
 
         for (const task of tasks) {
-            htmlString += `
-            <li class="tasks__item js__task"
-            >
-            <button class="tasks__button tasks__button--toggleDone js-toggleDone">
-            ${task.done ? "✔" : ""}
-            </button>
-            <span class="tasks__content${task.done ? " tasks__content--done" : ""}">
-                ${task.content}
+            tasksListHTMLContent += `
+              <li class="tasks__item js__task">
+                <button class="tasks__button tasks__button--toggleDone js-toggleDone">
+                  ${task.done ? "✔" : ""}
+                </button>
+                <span class="tasks__content${task.done ? " tasks__content--done" : ""}">
+                  ${task.content}
                 </span>
-            <button class="tasks__button tasks__button--remove js-removeTask">
-            🗑
-            </button>
-    
+                <button class="tasks__button tasks__button--remove js-removeTask">
+                  🗑
+                </button>
+              </li>
             `;
         }
 
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
         bindRemoveEvents();
         bindToggleDoneEvents();
