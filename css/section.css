@@ -9,8 +9,11 @@
     padding: 20px;
     margin: 0;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section__body {
     padding: 20px;
 }
+
