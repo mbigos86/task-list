@@ -8,7 +8,7 @@
 It allows adding and removing tasks from the list. 
 The task can be checked, deleted, hide or show completed or done all tasks with one button.
 
-![homepage](images/td.jpg)
+![homepage](images/td1.jpg)
 
  The technologies used are: 
  - HTML;
