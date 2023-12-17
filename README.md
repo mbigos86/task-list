@@ -5,7 +5,7 @@
 
 ## Task-list info
 
-It allows adding and removing tasks from the list.
+It allows adding and removing tasks from the list. The task can be checked or deleted.
 
 ![homepage](images/td.jpg)
 
