@@ -64,7 +64,7 @@
                 <button class="tasks__button tasks__button--toggleDone js-toggleDone"> 
                 ${task.done ? "✔" : ""}
                 </button>
-                <span class="tasks__content${task.done ? " tasks__content--done" : ""}"> ${task.content}
+                <span class="tasks__content${task.done ? " tasks__content--done" : ""}"> ${task.content} </span>
                 <button class="tasks__button tasks__button--remove js-removeTask">🗑</button>
             </li>
         `;
@@ -86,7 +86,7 @@
                 ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
             <button class="buttons__button js-markAllDone" 
-            ${tasks.every(({ done }) => done) ? "disabled" : ""}
+            ${tasks.every(({ done }) => done) ? " disabled" : ""}
             >
                 Ukończ wszystkie
             </button>

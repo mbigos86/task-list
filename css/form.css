@@ -9,7 +9,6 @@
     .form {
       grid-template-columns: 1fr;
     }
-  
   }
 
   .form__input {
@@ -22,11 +21,13 @@
     background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
+    transition: 0.5s;
   }
 
   .form__button:hover {
     background-color: hsl(180, 100%, 30%);
     color: white;
+    transform:  scale(1.2);
   }
 
   .form__button:active {
