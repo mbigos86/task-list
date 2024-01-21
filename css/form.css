@@ -21,6 +21,7 @@
     background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
+    cursor: pointer;
     transition: 0.5s;
   }
 
